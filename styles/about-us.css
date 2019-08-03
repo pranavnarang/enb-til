@@ -1,0 +1,349 @@
+
+
+.container {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+.header__content-left h1, h2 {
+    font-weight: bold;
+    color: #010101;
+}
+
+.header__content-left h1 {
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+.header__content-left h2 {
+    font-size:28px;
+    line-height: 37px;
+    width: 100%;
+}
+
+.quote {
+    color: #FFB61C;
+}
+
+.header__content-left h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header__content-right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 25%;
+}
+
+.header__content-right img {
+    max-width: 100%;
+}
+
+.evp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.evp__content-left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: -10%;
+}
+
+.evp__content-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 70px 20px 30px;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+@media (max-width: 1475px) {
+    .evp__content-right {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .evp {
+        flex-direction: column;
+    }
+
+    .evp__content-right {
+        order: 2;
+        margin-top: -5%;
+        margin-left: 0%;
+        justify-content: center;
+        padding: 20px 40px;
+        align-items: center;
+        width: 50%;
+    }
+
+    .evp__content-left {
+        order: 1;
+        margin-right: 0;
+    }
+}
+
+
+.evp__content-right h2{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
+
+.evp__content-right p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #010101;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    padding: 7px 15px;
+    background-color: #FFB61C;
+    text-transform: uppercase;
+    width: 40%;
+    margin-top: 20px;
+    transition: all .1s ease-out;
+    color: black;
+}
+
+.apply-now-button:hover {
+    background: #E5A319;
+}
+
+
+.team {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.team__content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.team__content-right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.team h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    color: #FFB61C;
+}
+
+.team__content-right img {
+    width: 125%;
+}
+
+.team__content-left img {
+    max-width: 100%;
+    filter: drop-shadow( 0px 4px 20px rgba(0, 0, 0, 0.05));
+}
+
+.culture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFB61C;
+}
+
+.culture h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.045em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.culture__values {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+.culture__values-value {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+}
+
+.culture__values-value p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 0px 70px 0px 0px;
+    width: 100%;
+}
+
+
+@media (max-width: 1100px) {
+    .culture__values-value {
+        width: 50%;
+    }
+
+    .culture__values {
+        flex-wrap: wrap;
+    }
+}
+
+
+.culture__values-value-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.culture__values-value-header h3 {
+    margin: 0px;
+}
+
+.culture img {
+    max-width: 25px;
+    max-height: 25px;
+    padding-right: 15px;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    background-color: #101010;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.locations__structure {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+}
+
+
+.locations__structure-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0px 100px 0px 0px;
+}
+
+
+@media (max-width: 1100px) {
+    .locations {
+        align-items: center;
+    }
+
+    .locations__structure {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .locations__structure-location {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 20px 0px;
+        align-items: center;
+    }
+    .locations__structure-location p {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+.locations h1 {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.locations__structure-location h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFB61C;
+}
+
+.locations__structure-location p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.locations__structure-location img {
+    margin-top: 40px;
+    max-width: 100%;
+}

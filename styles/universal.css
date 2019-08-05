@@ -1,0 +1,145 @@
+/*
+Orange: #FFB61C
+Grey: $F4F4F4
+*/
+
+
+img {
+    flex-shrink: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+* {
+    border: black solid 0px;
+}
+
+.orange-divider {
+    width: 70px;
+    height: 2px;
+    background-color: #FFB61C;
+}
+
+/* ----------------------- Animations ----------------------- */
+
+
+.revealOnScroll { opacity: 1; }
+
+
+/* ----------------------- Arrow ----------------------- */
+
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    margin-left: -15%;
+    transition: all .1s ease-in;
+}
+
+.nav-arrow-rotate-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* ----------------------- Nav Bar ----------------------- */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar__top {
+    width: 100%;
+    background-color: #ffb61c;
+    height: 30px;
+}
+
+.nav-bar__bottom {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar__bottom ul {
+    margin: 10px 0px;
+    padding: 0px 0px;
+}
+
+.nav-bar__bottom li {
+    display: inline;
+    padding: 10px 15px;
+}
+
+.nav-bar__sub li {
+    display: block;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    /* transition: all 0.5s ease; */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    padding: 5px 10px;
+    margin-left: 10%;
+  }
+
+  @media (min-width: 1700px) {
+    ul li:hover > ul,
+    ul li ul:hover {
+      margin-left: 7%;
+    }
+}
+
+@media (max-width: 1000px) {
+    ul li:hover > ul,
+    ul li ul:hover {
+      margin-left: 12%;
+    }
+}
+
+@media (max-width: 775px) {
+    ul li:hover > ul,
+    ul li ul:hover {
+      margin-left: 20%;
+    }
+}
+
+a.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-bar__bottom a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+}
+
+.nav-bar__bottom a:hover {
+    color: #ffb61c;
+}
+
+/* ----------------------- Page Layout ----------------------- */
+
+.container {
+    /* width: 100%; */
+    display: flex;
+    /* margin: 0% 0% 0% 0%; */
+    padding: 5% 10%;
+    box-sizing: border-box;
+}

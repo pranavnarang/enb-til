@@ -1,0 +1,21 @@
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: right;
+    color: #010101;
+    text-transform: uppercase;
+}
+
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.construction img {
+    max-width: 60%;
+}
